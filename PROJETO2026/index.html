@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta harset="UTF-8">
+        <meta name="viewport" content="width=device-windth, initial-scale=1.0">
+        <title>Men´s Barbershop</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Men´s Barbershop</h1>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Serviços</a>
+                <a href="#">Agendar</a>
+            </nav>
+        </header>
+
+        <setion class="hero">
+            <h2>Seu estilo começa aqui</h2>
+            <p>Cortes modernos, barba e acabamento profissional.</p>
+            <button id="btnAgendar">Agendar Agora</button>
+            <p id="mensagem"></p>
+        </setion>
+
+        
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" id="fechar">&times;</span>
+        <h2>Agendar Horário</h2>
+
+        <form id="formAgendamento">
+            <input type="text" id="nome" placeholder="Seu Nome">
+            <input type="text" id="telefone" placeholder="Telefone">
+            <select id="servico">
+                <option value="">Escolha o serviço</option>
+                <option>Corte</option>
+                <option>Barba</option>
+                <option>Corte + Barba</option>
+            </select>
+            <button type="submit">Confirmar</button>
+        </form>
+
+        <p id="mensagemForm"></p>
+    </div>
+</div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
